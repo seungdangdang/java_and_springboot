@@ -1,4 +1,4 @@
-package ch06;
+package chapter1.ch06;
 
 public class VariableTest {
     public static void main(String[] args) {

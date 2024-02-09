@@ -1,4 +1,4 @@
-package ch04;
+package chapter1.ch04;
 
 public class BinaryTest {
 

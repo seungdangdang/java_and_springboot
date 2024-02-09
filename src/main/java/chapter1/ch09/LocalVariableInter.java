@@ -1,4 +1,4 @@
-package ch09;
+package chapter1.ch09;
 
 public class LocalVariableInter {
 

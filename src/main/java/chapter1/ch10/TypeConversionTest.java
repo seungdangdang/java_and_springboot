@@ -1,4 +1,4 @@
-package ch10;
+package chapter1.ch10;
 
 public class TypeConversionTest {
 

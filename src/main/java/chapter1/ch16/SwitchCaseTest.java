@@ -1,4 +1,4 @@
-package ch16;
+package chapter1.ch16;
 
 public class SwitchCaseTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ch07;
+package chapter1.ch07;
 
 public class DoubleTest {
 
