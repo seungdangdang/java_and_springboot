@@ -15,7 +15,14 @@ public class BookTest {
             book.showInfo();
         }
 
-        System.arraycopy(library, 0, copyLibrary, 0, 3);
+        copyLibrary[0] = new Book();
+        copyLibrary[1] = new Book();
+        copyLibrary[2] = new Book();
+
+        for(int i = 0; i< library.length; i++) {
+            copyLibrary[i].setTitle(library[i].getTitle());
+            copyLibrary[i].setAuthor(library[i].getAuthor());
+        }
 
         System.out.println("======copy library=========");
         for(Book book : copyLibrary) {
