@@ -20,16 +20,17 @@ public class GetApiController {
     public String getHello() {
         return "get Hello";
     }
-//    @GetMapping(path = "/hello") // path = 을 통해 명시적 표현
+
+//    @GetMapping(path = "/hello") // path = 을 통해 명시적 표현 가능
 //    public String getHello() {
 //        return "get Hello";
 //    }
 
-    // 아래는 예전에 사용하던 방식, GetMapping을 통해 보완됨
-    @RequestMapping(path = "/hi", method = RequestMethod.GET) // RequestMapping 을 쓰면 get, post, put, delete 모든 메서드가 매핑되기 때문에 method를 명시 해줌
-    public String hi() {
-        return "hi";
-    }
+//    아래는 예전에 사용하던 방식, GetMapping을 통해 보완됨
+//    @RequestMapping(path = "/hi", method = RequestMethod.GET) // RequestMapping 을 쓰면 get, post, put, delete 모든 메서드가 매핑되기 때문에 method를 명시 해줌
+//    public String hi() {
+//        return "hi";
+//    }
 
     //MEMO: PathVariable 받기
 
