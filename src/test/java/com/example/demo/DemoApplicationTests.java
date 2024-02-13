@@ -15,7 +15,7 @@ class DemoApplicationTests {
         ObjectMapper objectMapper = new ObjectMapper();
 
         // object -> text
-        // 특징1. object mapper 는 get method 를 활용한다.
+        // 특징1. object mapper 는 get method 를 활용한다. -> 아무 메서드에 get을 붙이면 에러남
         JavaUser user = new JavaUser("seung", 20);
         String text = objectMapper.writeValueAsString(user);
         System.out.println(text);
@@ -23,7 +23,6 @@ class DemoApplicationTests {
 
         // text -> object
         // 특징2. objct mapper 는 default 생성자를 필요로 한다.
-        // 아무 메서드에 get을 붙이면 에러남
         JavaUser objectUser = objectMapper.readValue(text, JavaUser.class);
         System.out.println(objectUser);
     }
